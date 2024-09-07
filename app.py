@@ -3,8 +3,12 @@ import pandas as pd
 import plotly.express as px
 
 
-st.set_page_config(layout='wide')
-
+st.set_page_config(
+    page_title="India Data Visualization Dashboard",
+    page_icon="favicon.ico",
+    layout='wide'
+)
+st.title('India Data Visualization Dashboard')
 df = pd.read_csv('india.csv')
 
 list_of_state = list(df['State'].unique())
